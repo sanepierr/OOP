@@ -53,6 +53,16 @@ class Truck(Vehicle):
         return f"{base_string}\nHas trailer: {self.trailer}"
 
 
+class Garage:
+    def __init__(self):
+        self.parked_vehicle = []
+
+    def setVehicle(self, vehicle):
+        self.parked_vehicle.append(vehicle)  
+
+    def toString(self):
+        return f"Description of the parked vehicle:\n{self.parked_vehicle.toString()}" if self.parked_vehicle else "The garage is empty"
+
 
 
 
