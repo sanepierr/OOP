@@ -8,7 +8,7 @@ class GarageTester:
         self.garage = Garage()
 
     def addVehicles(self):
-        # Create instances of Car and Truck
+        #create vehicles to be used for testing
         car1 = Car("red", winter_tires=True)
         truck1 = Truck("blue", has_trailer=True)
 
